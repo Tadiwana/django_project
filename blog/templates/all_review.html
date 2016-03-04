@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-
-<title>
-    REVIEWS
-    </title>
-
-</head>
-
-<body>
-
-<h1>Our Reviews</h1>
-    {% for r in reviews}
-<div>
-    <h2> {{  r.title  }}</h2>
-    <p>   {{  r.review }}       </p>
+  <head>
+    <title>Reviews</title>
+  </head>
+  <body>
+    <h1>OUR REVIEWS</h1>
+    {% for r in reviews %}
+    <div>
+      <h3>{{ r.title }}</h3>
+     <p> {{ r.review}}
+     - {{r.name}}
+     </p>
+      <p>{{r.created_date}}</p>
     </div>
-
-
-
     {% endfor %}
-
-</body>
-
-
+  </body>
 </html>
