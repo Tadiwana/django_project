@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>
+    REVIEWS
+    </title>
+
+</head>
+
+<body>
+
+<h1>Our Reviews</h1>
+    {% for r in reviews}
+<div>
+    <h2> {{  r.title  }}</h2>
+    <p>   {{  r.review }}       </p>
+    </div>
+
+
+
+    {% endfor %}
+
+</body>
+
+
+</html>
